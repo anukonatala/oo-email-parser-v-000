@@ -10,8 +10,9 @@ def EmailParser
     parser(emails)
   end
   
-  def parser(emails)
-    emailList = emails.splits('')
+  def parse
+    emailList = @emails.split(/[\s,]+/)
+    emailList.uniq
   end
   
 end
