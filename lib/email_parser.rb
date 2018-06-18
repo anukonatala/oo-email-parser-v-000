@@ -11,7 +11,7 @@ def EmailParser
   end
   
   def parser(emails)
-    emailList = emails.
+    emailList = emails.splits('')
   end
   
 end
